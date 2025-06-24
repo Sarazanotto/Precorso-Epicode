@@ -3,85 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formo e input fields</title>
+    <title>Mi presento</title>
     <style>
-        #all {
-            margin: 0;
-        }
-       .margine {
-            margin-bottom: 1px;
-        }
-        p {
-            color: rgb(23, 122, 126); font-family: Georgia, 'Times New Roman', Times, serif;
-        }
 
-        input{
-            margin-bottom: 15px;
-        }
+       .sfumato-linear {
+        background-image: linear-gradient(to bottom, rgba(255, 192, 203, 0), rgba(255, 60, 164, 0.493), rgba(255, 192, 203, 0.055)); border: 1px transparent; padding: 5px;
+       }
+
+       table {
+        margin: 0 auto;
+        display: table;
+       }
+
+       h1, h2, h3 {
+        text-align: left;
+        font-family: Georgia, 'Times New Roman', Times, serif; 
+       }
+
+       img {
+        display: block;
+        margin: auto; border-radius: 10px;
+        border-color: deeppink; border-width: medium; border-style: double; padding: 20px ;
+       }
+
     </style>
 
-
+   
 </head>
-<body id="all" background="sfondo.jpg">
-     <form onsubmit="alert (Registrazione inviata)">
-    <h1 style="color: cadetblue; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
-        REGISTRATI ALLA NOSTRA PAGINA
-    </h1>
-<div style="text-align: center;">
-    <div class="margine">
-        <input  type="text" placeholder="Il tuo nome"/>
-    </div>
-     
-    <div><input type="text" placeholder="Il tuo cognome"/>
-    </div>
-    <div>
-        <input type="email" placeholder="Scrivi la tua mail"/>
-    </div>
-    
-        <input type="password" placeholder="Scrivi la tua password"/>
 
-    <div>
-        <input type="number" placeholder="Il tuo numero di telefono"/>
-    </div>
 
-   <div>
-    <p class="margine" style="color: cadetblue; font-family: Georgia, 'Times New Roman', Times, serif;">La tua data di nascita</p>
-    <input type="date"/>
+
+<body>
+    <div style="font-family: Arial, Helvetica, sans-serif;">
+    <div class="sfumato-linear" style="color: rgb(255, 255, 255);">
+   <h1 style="padding-top : 35px; border: 200px;">Mi presento!</h1> 
+   <h3 style="padding-bottom: 35px;">Ciao sono Sara e oggi mi presento nella mia prima pagina HTML</h3>
    </div>
-   
-   <div>
-    <p class="margine">
-    Che musica preferisci?
+   <p style="font-size: 14px;">Mi chiamo Sara ho 28 anni, arrivo dal mondo della ristorazione ma <spain style="color: deeppink; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 16px;">ho deciso di rivoluzionare la mia vita lavorativa!</spain>
+
+    Ho deciso di cambiare settore e posso dire che torno alle origini perchè mi sono diplomata al liceo artistico in grafica e design ma poi la vita mi ha portato altrove!
+    Non è proprio la materia in cui mi sono diplmata ma la programmazione di un sito, i codici mi hanno sempre affascinato e quindi eccomi qui a rimettermi in gioco!
    </p>
-   <input type="checkbox" id="Pop" name="musica" value="Pop"/>
-   <label for="Pop">Pop</label>
-   <input type="checkbox" id="Rock" name="musica" value="Rock"/>
-   <label for="Rock">Rock</label>
-   <input type="checkbox" id="Indie" name="musica" value="Indie"/>
-   <label for="Indie">Indie</label>
-</div>
 
-
-<div>
-    <P>Aggiungi un'immagine che più ti rappresenta</P>
-    <input type="file" accept="jpeg"/>
-</div>
-
-   <div>
-        <p class="margine">Informativa privicy</p>
-        <a href="privacy.pdf">Leggi attentamente l'informativa privicy e accetta</a>
-        <input type="radio">
+     <img src="https://media.licdn.com/dms/image/v2/D4D03AQEGCgh9t2xIFA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718636886794?e=1756339200&v=beta&t=aapwFIJPM9dCZB0wPiqZQueQ0Ik76ukwI6jDpROP8hk"
+    style="width: 200px; "
+     alt="Questa sono io"/>
+   
+   <p>Mi rendo conto della confusione e incoerenza del proggetto ma sto ancora cercando di capire un po' la logica</p>
+   
+   <div class="sfumato-linear" style="color: rgb(255, 255, 255); style="color: rgb(255, 255, 255);
+    background-color: rgba(255, 20, 145, 0.288);">
+    <h2>I miei hobby</h2>
     </div>
-
-    <button type="submit">Invia registrazione</button>
-    </form>
-</div>
    
-
-
-        
-        
+   <ul style="font-size: 14px;">
+    <li>Andare in moto</li>
+     <li>Trakking in montagna</li>
+      <li>Creare con il macrame</li>
+      <li>Correre</li>
+   </ul>
 
    
+  
+
+   <a href="https://www.instagram.com/saraazanotto/?next=%2F">
+    <h4 class="sfumato-linear">IL MIO PROFILO INSTAGRAM</h4>
+   </a>
+
+  <div class="body">
+    <input style="type="text" placeholder="Scrivi la tua mail"/>
+    <input type="password" placeholder="password"/>
+    <button style="font-family: Georgia, 'Times New Roman', Times, serif; color: deeppink;">Scrivimi!</button>
+
+  </div>
+
+
+
+
+ <div>
+    <table style="border-collapse: collapse; border: 1px solid rgb(0, 0, 0);">
+    <h2 class="sfumato-linear" style="color: azure;">Le miei esperienze lavorative</h2>
+    <thead>
+        <tr><th class="sfumato-linear" style="color: deeppink;">Impieghi</th><th class="sfumato-linear" style="color: deeppink;">Date</th></tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            <td style="width: 250px; height: 50px; border: 1px solid black;">commessa</td>
+            <td style="width: 250px; height: 50px; border: 1px solid black;">marzo '25 ad oggi</td>
+        </tr>
+
+        <tr>
+            <td style="width: 100px; height: 50px; border: 1px solid black;">barista</td>
+            <td style="width: 100px; height: 50px; border: 1px solid black; ">dicembre '23 a settembre '24</td>
+        </tr>
+
+        <tr>
+            <td style="width: 100px; height: 50px; border: 1px solid black;">chef</td>
+            <td style="width: 100px; height: 50px; border: 1px solid black;">dicembre '21 a novembre '23</td>
+        </tr>
+        <tr>
+            <td style="width: 100px; height: 50px; border: 1px solid black;">pasticcera</td>
+            <td style="width: 100px; height: 50px; border: 1px solid black;">settembre '19 a novembre '21</td>
+        </tr>
+
+    </tbody>
+</table>
+ </div>
+ 
+
+ 
+  
 </body>
 </html>
