@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formo e input fields</title>
+    <style>
+        #all {
+            margin: 0;
+        }
+       .margine {
+            margin-bottom: 1px;
+        }
+        p {
+            color: rgb(23, 122, 126); font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        input{
+            margin-bottom: 15px;
+        }
+    </style>
+
+
+</head>
+<body id="all" background="sfondo.jpg">
+     <form onsubmit="alert (Registrazione inviata)">
+    <h1 style="color: cadetblue; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
+        REGISTRATI ALLA NOSTRA PAGINA
+    </h1>
+<div style="text-align: center;">
+    <div class="margine">
+        <input  type="text" placeholder="Il tuo nome"/>
+    </div>
+     
+    <div><input type="text" placeholder="Il tuo cognome"/>
+    </div>
+    <div>
+        <input type="email" placeholder="Scrivi la tua mail"/>
+    </div>
+    
+        <input type="password" placeholder="Scrivi la tua password"/>
+
+    <div>
+        <input type="number" placeholder="Il tuo numero di telefono"/>
+    </div>
+
+   <div>
+    <p class="margine" style="color: cadetblue; font-family: Georgia, 'Times New Roman', Times, serif;">La tua data di nascita</p>
+    <input type="date"/>
+   </div>
+   
+   <div>
+    <p class="margine">
+    Che musica preferisci?
+   </p>
+   <input type="checkbox" id="Pop" name="musica" value="Pop"/>
+   <label for="Pop">Pop</label>
+   <input type="checkbox" id="Rock" name="musica" value="Rock"/>
+   <label for="Rock">Rock</label>
+   <input type="checkbox" id="Indie" name="musica" value="Indie"/>
+   <label for="Indie">Indie</label>
+</div>
+
+
+<div>
+    <P>Aggiungi un'immagine che più ti rappresenta</P>
+    <input type="file" accept="jpeg"/>
+</div>
+
+   <div>
+        <p class="margine">Informativa privicy</p>
+        <a href="privacy.pdf">Leggi attentamente l'informativa privicy e accetta</a>
+        <input type="radio">
+    </div>
+
+    <button type="submit">Invia registrazione</button>
+    </form>
+</div>
+   
+
+
+        
+        
+
+   
+</body>
+</html>
